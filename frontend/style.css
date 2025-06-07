@@ -1,0 +1,76 @@
+:root {
+  --bg: #353c4d;
+  --panel: #3e465a;
+  --text: #fff;
+  --text-secondary: #bfc5d1;
+  --bar-cpu: #6ea3ff;
+  --bar-mem: #e74c3c;
+  --bar-bg: #2c3342;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: var(--panel);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.metric-label {
+  color: var(--text-secondary);
+  font-size: 1.1em;
+}
+
+.bar-bg {
+  background: var(--bar-bg);
+  border-radius: 8px;
+  height: 18px;
+  margin: 8px 0;
+  width: 100%;
+  position: relative;
+}
+
+.bar {
+  height: 18px;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bar.cpu {
+  background: var(--bar-cpu);
+}
+
+.bar.mem {
+  background: var(--bar-mem);
+}
+
+.donut-chart {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+}
